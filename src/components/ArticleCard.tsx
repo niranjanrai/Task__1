@@ -1,7 +1,13 @@
 import "../styles/ArticleCard.scss";
 import ButtonOutline from "../ui/ButtonOutline";
 
-export default function ArticleCard({ title, img, para }) {
+interface ArticleCardProps {
+  title: string;
+  img: string;
+  para: string;
+}
+
+export default function ArticleCard({ title, img, para }: ArticleCardProps) {
   return (
     <div className="article__card">
       <img src={img} alt={title} />
