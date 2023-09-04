@@ -1,0 +1,102 @@
+.article__cards--container {
+  margin: 0 20px;
+  > .article__cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  > .carousel-buttons {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    > button {
+      width: 28px;
+      height: 29px;
+      border: 1px solid #828b9c;
+      font-weight: 600;
+    }
+
+    > p {
+      color: #424961;
+      font-family: Source Sans 3;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+  }
+}
+
+.article__card {
+  width: 100%;
+  max-width: 381px;
+  height: auto;
+  padding: 20px;
+  border: 1px solid rgba(147, 162, 211, 0.38);
+  border-radius: 20px;
+
+  > img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  > div {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    > h1 {
+      color: var(--primary, #0e2368);
+      font-family: Poppins;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 24px;
+    }
+
+    > p {
+      width: 100%;
+      color: var(--body, #444957);
+      font-family: Open Sans;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: -0.3px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  /* Styles for screens 768px and larger */
+
+  .article__cards--container {
+    margin: 0 20px; /* Adjust margin for spacing */
+  }
+
+  .article__card {
+    width: calc(33.33% - 20px); /* 3 cards per row with spacing */
+    max-width: none;
+    height: auto; /* Adjust height as needed */
+    padding: 20px; /* Adjust padding for spacing */
+    > div {
+      margin: 35px 16px 0 16px;
+      display: flex;
+      width: 295.025px;
+      height: 194.52px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 27.408px;
+      flex-shrink: 0;
+    }
+    > img {
+      width: 100%; /* Full width for images */
+      height: auto; /* Maintain aspect ratio */
+    }
+  }
+}

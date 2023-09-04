@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Source+Sans+3:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  max-width: 1440px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+.btn-outline {
+  min-width: 141px;
+  height: 42px;
+  padding: 3px 26px;
+  border-radius: 21px;
+  border: 1px solid #424961;
+  color: #424961;
+  font-family: Source Sans 3;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 35.593px;
+  letter-spacing: 0.493px;
+}
+.heading {
+  color: var(--primary, #0e2368);
+  font-family: Source Sans 3;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 42px;
+  letter-spacing: 2.24px;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
